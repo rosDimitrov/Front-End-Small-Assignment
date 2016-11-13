@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/history.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+</head>
+     
+
+<body>
+    
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5732b3d52e40167b"></script>
+
+
+    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+    
+    <div class="fb-comments" data-href="http://weekpeak.org" data-numposts="5" data-colorscheme
+="light"></div>
+    
+    
+    <div class="mini-menu hidden" id="mini-menu" >
+        <a href="#">Sign in</a>
+        <a href="scanner.html">Scanner (Beta)</a>
+        <a href="products.html">Products</a>  
+        <a href="#">Purchase History</a>
+        <a href="#">About us</a>
+        
+    </div>
+    
+    <header>    
+        <section>
+            <div>
+                <a href="index.html"><img src="images/logo.png"></a>
+            </div>
+
+            <div class="cats-div">
+                
+                <button id="categories">Categories
+                </button>
+                <a href="#" id='burger-menu'><i class="fa fa-bars fa-3x" aria-hidden="true"></i></a>
+
+            </div>
+            
+<!--     Desktop menu       -->
+            <nav>
+                <ul>
+                    <li><a href="products.html" >Products</a></li>
+                    <li><a href="#" class="selected">Purchase History</a></li>
+                    <li><a href="#">About us</a></li>
+                </ul>
+            </nav>
+            
+            <div class="secondary-nav">
+                <a href="#"><i class="fa fa-cart-arrow-down fa-2x" aria-hidden="true"></i></a>
+                <a href="#">Sign in</a>
+                <span> or </span>
+                <a href="#">Join</a>
+            </div>
+        </section>
+    </header>
+
+   
+    
+    <main>
+         <aside id="aside" class="toggleDisplay">
+            <ul class="aside-ul">
+                <li><a href=# class="selected-category">Today's Deals </a></li>
+                <li><a href=# id="cat1">Building Accessories</a>
+                    <ul class="subcategories hidden" id="sub1">
+                        <li><a href="#">Artificial stone</a></li>
+                        <li><a href="#">Concrete block</a></li>
+                        <li><a href="#">Urbanite</a></li>
+                        <li><a href="#">Terra cotta </a></li>
+                    </ul>
+                </li>
+                
+                <li><a href=# id="cat2">Building Elements</a>
+                      <ul class="subcategories hidden" id="sub2">
+                        <li><a href="#">Wire rope </a></li>
+                        <li><a href="#">Metal joist</a></li>
+                        <li><a href="#">Metal fabrications</a></li>
+                    </ul>
+                </li>
+                
+                <li><a href=#>Building Protection</a></li>
+                <li><a href=#>Construction Equipment</a></li>
+                <li><a href=#>Electrical systems and equipment</a></li>
+                <li><a href=#>Surface finishing</a></li>
+            </ul>
+        </aside>
+        
+        <section id="order">
+<!--
+            <table >
+                <tr>
+                    <th>Order Number</th>
+                    <th></th>
+                    <th>Date</th>
+                </tr>
+                <tr>
+                    <td>4125151</td>
+                    <td></td>
+                    <td>12.05.04</td>
+                </tr>
+                <tr>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>Product1</td>
+                    <td>3</td>
+                    <td>120$</td>
+                </tr>
+                <tr>
+                    <td>Product2</td>
+                    <td>4</td>
+                    <td>430$</td>
+                </tr>
+                <tr>
+                    <td>Product3</td>
+                    <td>22</td>
+                    <td>220$</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>TOTAL: 1500$</td>
+                </tr>
+            </table>
+            
+            <table>
+                <tr>
+                    <th>Order Number</th>
+                    <th></th>
+                    <th>Date</th>
+                </tr>
+                <tr>
+                    <td>4125151</td>
+                    <td></td>
+                    <td>12.05.04</td>
+                </tr>
+                <tr>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>Product1</td>
+                    <td>3</td>
+                    <td>120$</td>
+                </tr>
+                <tr>
+                    <td>Product2</td>
+                    <td>4</td>
+                    <td>430$</td>
+                </tr>
+                <tr>
+                    <td>Product3</td>
+                    <td>22</td>
+                    <td>220$</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>TOTAL: 1500$</td>
+                </tr>
+            </table>
+-->
+            
+            
+        </section>
+        
+    </main>
+    <footer>
+        <span>&copy;</span> Created by Rostislav Dimitrov
+
+    </footer>
+<script>
+        
+      
+    var ordersJSON = [
+    {"orderNumber":"4124", "orderDate":"12.05.2004",
+    "Products":[{"productName":"Product1","quantity":2,"price":120},{"productName":"Product2","quantity":4,"price":10},{"productName":"Product3","quantity":1,"price":90}]},
+    {"orderNumber":"3251", "orderDate":"11.03.2016",
+    "Products":[{"productName":"Product1","quantity":4,"price":220},{"productName":"Product54","quantity":98,"price":33}]}];
+        
+    var order = document.getElementById("order");
+        
+    var temp = "";
+        totalPrice = 0;
+    console.log(ordersJSON[0].Products.length);
+    console.log(ordersJSON[0].Products[0]);
+    console.log(ordersJSON[0].Products[1]);
+    console.log(ordersJSON[0].Products[2]);
+    
+    for(var i =0;i<ordersJSON.length;i++){
+        temp+='<table><tr>';
+        temp+='<th>Order Number</th>';
+        temp+='<th></th>';
+        temp+='<th>Date</th>';
+        temp+='</tr>';
+        temp+='<tr><td>'+ordersJSON[i].orderNumber +'</td><td></td><td>'+ordersJSON[i].orderDate+'</td></tr>';
+        temp+='<tr><th>Product Name</th><th>Quantity</th><th>Price</th><tr/>';
+            for(var j = 0;j< ordersJSON[i].Products.length;j++){
+                temp+='<tr><td>'+ordersJSON[i].Products[j].productName+'</td><td>'+ordersJSON[i].Products[j].quantity+'</td><td>'+ordersJSON[i].Products[j].price+'</td></tr>'
+                totalPrice+=ordersJSON[i].Products[j].price;
+            }
+        temp+='<tr><td></td><td></td><td>Total price '+totalPrice+'</td></tr>'
+        temp+='</table>';     
+        totalPrice=0;
+    }
+    order.innerHTML= temp;
+    console.log(order.innerHTML);
+//                
+
+    //hide show subcats in mobile mode
+
+    var catsButton = document.getElementById('categories'); 
+
+    var aside = document.getElementById('aside');
+    catsButton.addEventListener('click',function(e){aside.classList.toggle("toggleDisplay")});
+
+    //Hamburger menu
+    var miniMenu = document.getElementById('mini-menu');
+    var burgerButton = document.getElementById('burger-menu');
+    burgerButton.addEventListener('click',function(e){
+        miniMenu.classList.toggle("hidden")
+    });
+ </script>

@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/products.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+</head>
+     
+
+<body>
+    <div class="mini-menu hidden" id="mini-menu" >
+        <a href="#">Sign in</a>
+        <a href="scanner.html">Scanner (Beta)</a>
+        <a href="#">Shopping Cart</a>  
+        <a href="history.html">Purchase History</a>
+        <a href="#">About us</a>
+        
+    </div>
+    
+    <header>    
+        <section>
+            <div>
+                <a href="index.html"><img src="images/logo.png"></a>
+            </div>
+
+            <div class="cats-div">
+                
+                <button id="categories">Categories
+                </button>
+                <a href="#" id='burger-menu'><i class="fa fa-bars fa-3x" aria-hidden="true"></i></a>
+
+            </div>
+            
+<!--     Desktop menu       -->
+            <nav>
+                <ul>
+                    <li><a href="#" class="selected">Products</a></li>
+                    <li><a href="history.html">Purchase History</a></li>
+                    <li><a href="#">About us</a></li>
+                </ul>
+            </nav>
+            
+            <div class="secondary-nav">
+                <a href="#"><i class="fa fa-cart-arrow-down fa-2x" aria-hidden="true"></i></a>
+                <a href="#">Sign in</a>
+                <span> or </span>
+                <a href="#">Join</a>
+            </div>
+        </section>
+    </header>
+
+   
+    
+    <main>
+        
+        <aside id="aside" class="toggleDisplay">
+            <ul class="aside-ul">
+                <li><a href=# class="selected-category">Today's Deals </a></li>
+                <li><a href=# id="cat1">Building Accessories</a>
+                    <ul class="subcategories hidden" id="sub1">
+                        <li><a href="#">Artificial stone</a></li>
+                        <li><a href="#">Concrete block</a></li>
+                        <li><a href="#">Urbanite</a></li>
+                        <li><a href="#">Terra cotta </a></li>
+                    </ul>
+                </li>
+                
+                <li><a href=# id="cat2">Building Elements</a>
+                      <ul class="subcategories hidden" id="sub2">
+                        <li><a href="#">Wire rope </a></li>
+                        <li><a href="#">Metal joist</a></li>
+                        <li><a href="#">Metal fabrications</a></li>
+                    </ul>
+                </li>
+                
+                <li><a href=#>Building Protection</a></li>
+                <li><a href=#>Construction Equipment</a></li>
+                <li><a href=#>Electrical systems and equipment</a></li>
+                <li><a href=#>Surface finishing</a></li>
+            </ul>
+        </aside>
+        
+        <section class="product-wrapper" id="product-wrapper">
+<!--
+            <p>Today's Deals</p>
+            
+            <div class="products">
+            <img src="images/Deals/deal1.jpeg"/>
+            <p>Suspendisse laoreet, ut risus pede vestibulum volutpat sodales placerat, ante proin felis orci porttitor. Sit class soluta tincidunt lectus id, dignissim quisque cras in massa nec.</p><a href="#" class="order"><i class="fa fa-cart-plus " aria-hidden="true"></i> Order</a>
+            </div>
+            
+            <div class="products">
+            <img src="images/Deals/deal2.jpeg"/>
+            <p>Suspendisse laoreet, ut risus pede vestibulum volutpat sodales placerat, ante proin felis orci porttitor. Sit class soluta tincidunt lectus id, dignissim quisque cras in massa nec.</p><a href="#" class="order"><i class="fa fa-cart-plus " aria-hidden="true"></i> Order</a>    
+            </div>
+            
+            <div class="products">
+            <img src="images/Deals/deal3.jpeg"/>
+            <p>Suspendisse laoreet, ut risus pede vestibulum volutpat sodales placerat, ante proin felis orci porttitor. Sit class soluta tincidunt lectus id, dignissim quisque cras in massa nec.</p><a href="#" class="order"><i class="fa fa-cart-plus " aria-hidden="true"></i> Order</a>
+            </div>
+            
+            <div class="products">
+            <img src="images/Deals/deal4.jpeg"/>
+            <p>Suspendisse laoreet, ut risus pede vestibulum volutpat sodales placerat, ante proin felis orci porttitor. Sit class soluta tincidunt lectus id, dignissim quisque cras in massa nec.</p><a href="#" class="order"><i class="fa fa-cart-plus " aria-hidden="true"></i> Order</a>
+            </div>
+            
+            <div class="products">
+            <img src="images/Deals/deal5.jpeg"/>
+            <p>Suspendisse laoreet, ut risus pede vestibulum volutpat sodales placerat, ante proin felis orci porttitor. Sit class soluta tincidunt lectus id, dignissim quisque cras in massa nec.</p><a href="#" class="order"><i class="fa fa-cart-plus " aria-hidden="true"></i> Order</a>
+            </div>
+            
+            <div class="products">
+            <img src="images/Deals/deal6.jpeg"/>
+            <p>Suspendisse laoreet, ut risus pede vestibulum volutpat sodales placerat, ante proin felis orci porttitor. Sit class soluta tincidunt lectus id, dignissim quisque cras in massa nec.</p><a href="#" class="order"><i class="fa fa-cart-plus " aria-hidden="true"></i> Order</a>
+            </div>
+            <div class="products">
+            <img src="images/Deals/deal7.jpeg"/>
+            <p>Suspendisse laoreet, ut risus pede vestibulum volutpat sodales placerat, ante proin felis orci porttitor. Sit class soluta tincidunt lectus id, dignissim quisque cras in massa nec.</p><a href="#" class="order"><i class="fa fa-cart-plus " aria-hidden="true"></i> Order</a>
+            </div>
+            
+            <div class="products">
+            <img src="images/Deals/deal8.jpeg"/>
+            <p>Suspendisse laoreet, ut risus pede vestibulum volutpat sodales placerat, ante proin felis orci porttitor. Sit class soluta tincidunt lectus id, dignissim quisque cras in massa nec.</p><a href="#" class="order"><i class="fa fa-cart-plus " aria-hidden="true"></i> Order</a>
+            </div>
+            
+            <div class="products">
+            <img src="images/Deals/deal9.jpeg"/>
+            <p>Suspendisse laoreet, ut risus pede vestibulum volutpat sodales placerat, ante proin felis orci porttitor. Sit class soluta tincidunt lectus id, dignissim quisque cras in massa nec.</p><a href="#" class="order"><i class="fa fa-cart-plus " aria-hidden="true"></i> Order</a>
+            </div>
+            
+            <div class="products">
+            <img src="images/Deals/deal10.jpeg"/>
+            <p>Suspendisse laoreet, ut risus pede vestibulum volutpat sodales placerat, ante proin felis orci porttitor. Sit class soluta tincidunt lectus id, dignissim quisque cras in massa nec.</p><a href="#" class="order"><i class="fa fa-cart-plus " aria-hidden="true"></i> Order</a>
+            </div>
+            
+            <div class="products">
+            <img src="images/Deals/deal11.jpeg"/>
+            <p>Suspendisse laoreet, ut risus pede vestibulum volutpat sodales placerat, ante proin felis orci porttitor. Sit class soluta tincidunt lectus id, dignissim quisque cras in massa nec.</p><a href="#" class="order"><i class="fa fa-cart-plus " aria-hidden="true"></i> Order</a>
+            </div>
+            
+            <div class="products">
+            <img src="images/Deals/deal12.jpeg"/>
+            <p>Suspendisse laoreet, ut risus pede vestibulum volutpat sodales placerat, ante proin felis orci porttitor. Sit class soluta tincidunt lectus id, dignissim quisque cras in massa nec.</p><a href="#" class="order"><i class="fa fa-cart-plus " aria-hidden="true"></i> Order</a>
+            </div>
+            
+            <div class="products">
+            <img src="images/Deals/deal13.jpeg"/>
+            <p>Suspendisse laoreet, ut risus pede vestibulum volutpat sodales placerat, ante proin felis orci porttitor. Sit class soluta tincidunt lectus id, dignissim quisque cras in massa nec.</p><a href="#" class="order"><i class="fa fa-cart-plus " aria-hidden="true"></i> Order</a>
+            </div>
+            
+            <div class="products">
+            <img src="images/Deals/deal14.jpeg"/>
+            <p>Suspendisse laoreet, ut risus pede vestibulum volutpat sodales placerat, ante proin felis orci porttitor. Sit class soluta tincidunt lectus id, dignissim quisque cras in massa nec.</p><a href="#" class="order"><i class="fa fa-cart-plus " aria-hidden="true"></i> Order</a>
+            </div>
+            
+            <div class="products">
+            <img src="images/Deals/deal15.jpeg"/>
+            <p>Suspendisse laoreet, ut risus pede vestibulum volutpat sodales placerat, ante proin felis orci porttitor. Sit class soluta tincidunt lectus id, dignissim quisque cras in massa nec.</p><a href="#" class="order"><i class="fa fa-cart-plus " aria-hidden="true"></i> Order</a>
+            </div>
+            
+            <div class="products">
+            <img src="images/Deals/deal16.jpeg"/>
+            <p>Suspendisse laoreet, ut risus pede vestibulum volutpat sodales placerat, ante proin felis orci porttitor. Sit class soluta tincidunt lectus id, dignissim quisque cras in massa nec.</p><a href="#" class="order"><i class="fa fa-cart-plus " aria-hidden="true"></i> Order</a>
+            </div>
+-->
+            
+<!--
+            <div class="clearfix"></div>
+            
+            <ul class="pagination" id="pagination">
+                <li><a href="javascript:prevPage()" id="btn_prev">&lt;&lt;</a></li>
+                <li><a href="">1</a></li>
+                <li><a href="">2</a></li>
+                <li><a href="">3</a></li>
+                <li><a href="">4</a></li>
+                <li><a href="">5</a></li>
+                <li><a href="javascript:nextPage()" id="btn_next">&gt;&gt;</a></li>
+            </ul>
+-->
+            
+        </section>
+
+       
+
+    </main>
+
+    <footer>
+        <span>&copy;</span> Created by Rostislav Dimitrov
+
+    </footer>
+    
+    <script> 
+        //hide show subcats in desktop mode
+         var hideShowModule = (function(){
+             
+            var sub1 = document.getElementById('sub1');
+            var sub2 = document.getElementById('sub2');
+            
+            function hideOrShow(e){
+            if(e.target.innerHTML==="Building Accessories"){
+                
+                if(sub1.className === 'subcategories hidden'){
+                    console.log("in the if")
+                    sub1.className = 'subcategories show';
+                }
+                else{
+                    sub1.className = 'subcategories hidden';
+                    console.log("in the else")
+                }
+            }
+            else if(e.target.innerHTML ==="Building Elements"){
+                if(sub2.className === 'subcategories hidden'){
+                    console.log("in the if")
+                    sub2.className = 'subcategories show';
+                }
+                else{
+                    sub2.className = 'subcategories hidden';
+                    console.log("in the else")
+                }
+                    
+            }
+             
+            }
+            return{
+                    hideOrShow: hideOrShow
+                } 
+         })();
+                
+            var cat1 = document.getElementById('cat1');
+            var cat2 = document.getElementById('cat2');
+             cat1.addEventListener('click',hideShowModule.hideOrShow);
+             cat2.addEventListener('click',hideShowModule.hideOrShow);
+    
+        
+        //hide show subcats in mobile mode
+        
+        var catsButton = document.getElementById('categories'); 
+      
+        var aside = document.getElementById('aside');
+        catsButton.addEventListener('click',function(e){aside.classList.toggle("toggleDisplay")});
+        
+        //Hamburger menu
+        var miniMenu = document.getElementById('mini-menu');
+        var burgerButton = document.getElementById('burger-menu');
+        burgerButton.addEventListener('click',function(e){
+            miniMenu.classList.toggle("hidden")
+        });
+        
+        
+        //json with products
+        var current_page = 1;
+        var records_per_page = 16;
+
+        var jsonObject = [
+            { "productDescription": "1Suspendisse laoreet, ut risus pede vestibulum volutpat sodales placerat, ante proin felis orci porttitor. Sit class soluta tincidunt lectus id, dignissim quisque cras in massa nec"},
+            { productDescription: "2Suspendisse laoreet, ut risus pede vestibulum volutpat sodales placerat, ante proin felis orci porttitor. Sit class soluta tincidunt lectus id, dignissim quisque cras in massa nec"},
+            { productDescription: "3Suspendisse laoreet, ut risus pede vestibulum volutpat sodales placerat, ante proin felis orci porttitor. Sit class soluta tincidunt lectus id, dignissim quisque cras in massa nec"},
+            { productDescription: "4Suspendisse laoreet, ut risus pede vestibulum volutpat sodales placerat, ante proin felis orci porttitor. Sit class soluta tincidunt lectus id, dignissim quisque cras in massa nec"},
+            { productDescription: "5Suspendisse laoreet, ut risus pede vestibulum volutpat sodales placerat, ante proin felis orci porttitor. Sit class soluta tincidunt lectus id, dignissim quisque cras in massa nec"},
+            { productDescription: "6Suspendisse laoreet, ut risus pede vestibulum volutpat sodales placerat, ante proin felis orci porttitor. Sit class soluta tincidunt lectus id, dignissim quisque cras in massa nec"},
+            { productDescription: "7Suspendisse laoreet, ut risus pede vestibulum volutpat sodales placerat, ante proin felis orci porttitor. Sit class soluta tincidunt lectus id, dignissim quisque cras in massa nec"},
+            { productDescription: "8Suspendisse laoreet, ut risus pede vestibulum volutpat sodales placerat, ante proin felis orci porttitor. Sit class soluta tincidunt lectus id, dignissim quisque cras in massa nec"},
+            { productDescription: "9Suspendisse laoreet, ut risus pede vestibulum volutpat sodales placerat, ante proin felis orci porttitor. Sit class soluta tincidunt lectus id, dignissim quisque cras in massa nec"},
+            { productDescription: "10Suspendisse laoreet, ut risus pede vestibulum volutpat sodales placerat, ante proin felis orci porttitor. Sit class soluta tincidunt lectus id, dignissim quisque cras in massa nec"},
+            { productDescription: "11Suspendisse laoreet, ut risus pede vestibulum volutpat sodales placerat, ante proin felis orci porttitor. Sit class soluta tincidunt lectus id, dignissim quisque cras in massa nec"},
+            { productDescription: "12Suspendisse laoreet, ut risus pede vestibulum volutpat sodales placerat, ante proin felis orci porttitor. Sit class soluta tincidunt lectus id, dignissim quisque cras in massa nec"},
+            { productDescription: "13Suspendisse laoreet, ut risus pede vestibulum volutpat sodales placerat, ante proin felis orci porttitor. Sit class soluta tincidunt lectus id, dignissim quisque cras in massa nec"},
+            { productDescription: "TEST14"},
+            { productDescription: "TEST15"},
+            { productDescription: "TEST16"},
+            { productDescription: "TEST17"},
+            { productDescription: "18"},
+            { productDescription: "19"},
+            { productDescription: "20"},
+            { productDescription: "21"},
+            { productDescription: "22"},
+            { productDescription: "23"},
+            { productDescription: "24"},
+            { productDescription: "25"},
+            { productDescription: "26"},
+            { productDescription: "27"},
+            { productDescription: "28"},
+            { productDescription: "29"},
+            { productDescription: "30"},
+            { productDescription: "31"},
+            { adName: "32 FINAL"}
+        ];   
+        
+                function prevPage()
+                {
+                    if (current_page > 1) {
+                        current_page--;
+                        changePage(current_page);
+                    }
+                }
+
+                function nextPage()
+                {
+                    if (current_page < numPages()) {
+                        current_page++;
+                        changePage(current_page);
+                    }
+                }
+        
+        
+                function numPages()
+                {
+                    return Math.ceil(jsonObject.length / records_per_page);
+                   
+                }
+        
+                function changePage(page){        
+                    if (page < 1) page = 1;
+                    if (page > numPages()) page = numPages();
+
+                    var btn_next = document.getElementById("btn_next");
+                    var btn_prev = document.getElementById("btn_prev");
+                    var wrapper = document.getElementById("product-wrapper");
+
+                    var temp = "<p>Today's Deals</p>";
+
+                    for (var i = (page-1) * records_per_page; i < (page * records_per_page) && i < jsonObject.length; i++){
+                        temp +='<div class="products">'+'<img src="images/Deals/deal'+[i]+'.jpeg"/>' + jsonObject[i].productDescription + '<p><a href=""# class="order"><i class="fa fa-cart-plus" aria-hidden="true"></i> Order</a></div>';
+                    }  
+
+                    temp+='<div class="clearfix"></div><ul class="pagination"><li><a href="javascript:prevPage()" id="btn_prev"> &lt;&lt;</a></li>';
+
+
+                    for(var i = 0;i<numPages();i++){
+                    temp +='<li><a href="#">'+ [i+1]+'</a></li>' 
+                    console.log(wrapper);
+                    }
+
+                    temp+='<li><a href="javascript:nextPage()" id="btn_next"> &gt;&gt;</a></li></ul>';  
+
+                    wrapper.innerHTML = temp;
+                }
+        
+        window.onload = function() {
+            changePage(1);
+        };
+
+        
+      
+    </script>
+
+</body>
+
+
+
+</html>

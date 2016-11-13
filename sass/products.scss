@@ -1,0 +1,355 @@
+$blue-default: rgb(0, 116, 228);
+$blue-highlight: rgba(0, 116, 228, 0.75);
+$blue-transparent:rgba(0, 116, 228, 0.35);
+$black: rgb(0, 0, 0);
+$white: rgb(255, 255, 255);
+$background-grey: rgb(238, 238, 238);
+$background-blue: rgb(226, 239, 252);
+@mixin cat-button {
+    font-size: 1.6em;
+    background-color: $blue-default;
+    border:1px solid $blue-default;
+    color:$white;
+    padding:20px;
+    margin-top:15px;
+    
+}
+/* ================================= 
+Base Element Styles
+==================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.6;
+    color: $black;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+p:last-child {
+    margin-bottom: 0;
+}
+
+a,
+p {
+    color: $black;
+    text-decoration: none;
+}
+/* ================================= 
+Base Layout Styles
+==================================== */
+.mini-menu{
+    background-color:$blue-transparent; 
+    a{
+        display: inline-block;
+        width:20%;
+        height: 60px;
+        margin-left: -5px;
+        vertical-align:bottom;
+        text-align: center;
+        line-height: 30px;
+        color:white;
+        &:hover{
+            color:white;
+            background-color:$blue-highlight;
+        }
+    } 
+}
+// ---- Header -----------
+header {
+    width: 100%;
+    height: 100px;
+    background-color: $blue-highlight;
+    section {
+        max-width: 90%;
+        margin: 0px auto;
+        div {
+            display: inline-block;
+        }
+    }
+    
+}
+
+header nav, .secondary-nav{
+    display: none;
+}
+
+#categories{
+    @include cat-button;
+    &:hover{
+        color:$blue-highlight;
+        background-color: $white;
+    }
+}
+.cats-div{
+    float:right;
+    height: 100px;
+    line-height: 100px;
+    a{
+        margin:10px;
+//        color:$white;
+        vertical-align:sub;
+        &:hover{
+            color:$blue-default;
+        }
+    }
+}
+
+//Desktop nav menu
+.selected{
+background-color: $black;
+}
+nav{
+    display: inline-block;
+    line-height: 96px;
+    
+    li{
+        
+        margin-left: 40px;
+        box-sizing: border-box;
+        float:left;
+    }
+    a{
+        padding:38px 20px;
+        color:$white;
+        background-color: $blue-default;
+        font-size:1.3em;
+        &:hover{
+            background-color:$blue-highlight;
+            color:black;
+        }
+    }
+}
+.secondary-nav {
+    display:none;
+    line-height: 100px;
+    vertical-align: top;
+    font-size: 1.5em;
+    float: right;
+    a{
+        color:white;
+    }
+    a:hover {
+        color: $blue-default;
+    }
+}
+
+// ---- Main ------------- 
+
+//aside
+aside{
+    width:100%;
+    background-color:$blue-transparent;
+    float:left;
+    overflow: scroll;
+    a{
+       display: block;
+        text-align: center;
+    }
+    
+}
+.selected-category{
+    background-color: black;
+    color:white;
+}
+
+.subcategories{
+    a{
+    background-color: $blue-transparent;
+    display:inline-block;
+    width:90%;
+    margin-left: 5%;
+    } 
+    li:last-child{
+    margin-bottom: 20px;
+    }
+}
+
+.hidden{
+    display: none;
+}
+.show{
+    display: block;
+}
+.toggleDisplay{
+        display: none;
+    } 
+
+//products 
+.product-wrapper{ 
+    width:100%;
+    height: calc(100vh - 100px);
+    background-color: white;
+    overflow: scroll;
+    padding-bottom: 20px;
+    p{
+        font-size: 1.5em;
+        text-align: center;
+        padding:30px 0px;
+        
+    }
+    .products{
+        width:80%;
+        position:relative;
+        float:left;
+        margin-top:10px;
+        margin-left:10%;
+        height: 400px;
+        background-color:$blue-transparent;
+        text-align: center;
+        img{
+            max-width:100%;
+            max-height: 100%;
+            
+        }
+        p{
+            padding-top:0px;
+            font-size:1.1em;
+            padding-bottom: 2px;
+        }
+        .order{
+            color:white;
+            padding-top:0px;
+            font-size:2em;
+            position:absolute;
+            bottom: 0;
+            left:0;
+            width: 100%;
+            
+            &:hover{
+                color:$blue-default; 
+            }
+        }
+    }
+    .clearfix{
+       clear:both;
+       content: "";
+
+    }
+    .pagination{
+        font-size:1.3em;
+        display: inline-block;
+        margin-top: 20px;
+        margin-left:20px;
+        
+        
+        li{
+            float:left;
+            
+        }
+        a{
+            padding:10px;
+            border:1px solid black;
+            &:hover{
+                background-color: $blue-highlight;
+            }
+        }
+    }
+}
+
+
+// ---- Footer ------------
+footer {
+    background-color: $blue-highlight;
+    text-align: center;
+    clear:left;
+    padding:10px;
+    span{
+        color:white;
+    }
+}
+/*================================= 
+Media Queries
+==================================== */
+
+@media screen and (min-width: 460px) {
+
+   .product-wrapper{ 
+        
+        .products{
+        width:47%;
+        margin-top:10px;
+        margin-left:2%;
+        }
+    }
+    
+    
+}
+@media screen and (min-width: 769px) {
+
+   .product-wrapper{ 
+        
+        .products{
+        width:30%;
+        margin-top:10px;
+        margin-left:2.5%;
+        }
+    }
+   
+}
+
+@media screen and (min-width: 1200px) {
+     aside{
+    width:300px;
+    height: calc(100vh - 100px);
+    background-color:$blue-transparent;
+    float:left;
+    overflow: scroll;
+    display:block;    
+}
+ 
+    .toggleDisplay{
+        display: block;
+    } 
+    
+.cats-div{
+    display: none;    
+}
+    header nav{
+        display: inline-block;
+    }    
+    .secondary-nav{
+        display:block;
+    } 
+    
+        aside{
+        display:block;
+            ul{
+                text-align: center;
+                margin-top:20px;
+            }
+            li a{
+              display:block;
+                padding:20px;
+                margin-bottom: 10px;
+                background-color: $blue-default;
+                color:white;
+                &:hover{
+                    background-color: $blue-highlight;
+                    color:black;
+                    
+                }
+            }
+    }
+    
+    .product-wrapper{ 
+        margin-left:300px;
+        width:calc(100% - 300px);
+        
+        .products{
+        width:22%;
+        margin-top:10px;
+        margin-left:2.5%;
+        }
+    }
+    
+.subcategories{
+    a{
+    margin-left: 0%;
+    }
+}
+}

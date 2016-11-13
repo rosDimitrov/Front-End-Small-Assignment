@@ -1,0 +1,246 @@
+$blue-default: rgb(0,116,228);
+$blue-highlight: rgba(0,116,228,0.75);
+$blue-transparent:rgba(0,116,228,0.35);
+$black: rgb(0,0,0);
+$white: rgb(255,255,255);
+$background-grey: rgb(238,238,238);
+$background-blue: rgb(226,239,252);
+
+@mixin search{
+      position:absolute;
+        right:0;
+        top:0;
+        height:36px;
+        font-size:1.3em;
+        color:$white;
+        background-color: $blue-default;
+    
+}
+
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+	line-height: 1.6;
+	color: $black;
+}
+
+p:last-child {
+	margin-bottom: 0;
+}
+
+a,p { 
+	color: $white;
+	text-decoration: none;
+}
+
+
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+// ---- Header -----------
+header{
+    width: 100%;
+    height: 100px;
+    background-color: $blue-highlight;
+    section{
+        max-width:90%;
+        margin:0px auto;
+        div{
+            display: inline-block;
+        }
+    }   
+}
+.secondary-nav{
+    line-height: 100px;
+    vertical-align: top;
+    font-size:1.5em;
+    float:right;
+    a:hover{
+        color:$blue-default;
+    }
+}
+
+// ---- Main ------------- 
+
+//.blue-wrapper{
+//    position:absolute;
+//    height:65vh;
+//    width: 100%;
+//    background:rgba(22,52,93,0.1);
+//    
+//}
+.content-hero{
+    
+    background-image: url(../images/content-hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height:65vh;
+    z-index: 1000;
+    p{
+        font-size: 1.6em;
+        text-align: center;
+        padding-top:10vh;
+    }
+}
+
+nav{
+    a{
+        font-size:1.2em;
+        display:block;
+        text-align: center;
+        width:90vw;
+        margin:10px auto;
+        padding:10px;
+        background-color:$blue-transparent;
+        border:1px solid $white;
+        
+        
+        &:hover{
+            background-color: $blue-highlight;
+        }   
+    }
+    li:last-child a{
+        border:none;
+        background-color: transparent;   
+    }
+}
+.link{
+    color:orange;
+    &:hover{
+       color:lighten(orange,15%); 
+    }
+}
+form {
+    position:relative;
+    width:90%;
+    margin:0 auto;
+    
+    input[type=text]{
+        width:100%;
+        height:36px;
+        font-size: 1.3em;
+    }
+    button{
+        @include search;
+      
+        
+        &:hover{
+            background-color: $blue-highlight;
+        }
+    }
+}
+
+.extra-info{
+    p{
+        color:black;
+        padding-top:20px;
+        text-align: center;
+        font-size:1.6em;
+    }
+    div{
+        width:80%;
+        margin:20px auto;
+        text-align: center;
+        
+        img{
+            max-width:100%;
+            height: auto;
+        }
+        p{
+            padding:5px;
+            font-size:1.1em;
+        }
+        span{
+            color:orange;
+        }
+    }
+    
+}
+
+// ---- Footer ------------
+
+footer{
+    background-color: $background-blue;
+    text-align: center;
+     
+}
+
+/*================================= 
+  Media Queries
+==================================== */
+
+@media screen and (min-width: 769px) {
+
+ nav {
+     ul{
+         width:90%;
+         margin:0 auto;
+     }
+     li {
+         float:left;
+     }
+     a {
+         display: inline-block;
+         width: 30vw;
+         margin: 10px auto;
+         padding: 30px;
+     }
+     li:last-child a {
+         width:90vw;
+         margin:0 auto;
+         text-align: center;
+     }
+     form{
+         clear:both;
+         
+         input[type=text]{
+            margin-left:10%;
+             width:80%;}
+         button{
+             right:10%;
+         }
+     }
+ }
+    
+
+.extra-info{
+    
+    div{
+        float:left;
+        width:30%;
+        margin:20px 1%;
+        text-align: center;
+        img{
+            max-width:100%;
+            height: auto;
+            }
+        }
+    }
+}
+
+footer{
+    clear:both;
+}
+
+@media screen and (min-width: 940px) {
+
+
+}
+
+
+
+
+
+
+
+
+
